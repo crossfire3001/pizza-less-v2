@@ -1,0 +1,292 @@
+/*=============== FONTS ===============*/
+@font-face {
+    font-family: MullerRegular;
+    src: url("../fonts/MullerRegular.otf");
+}
+
+@font-face {
+    font-family: MullerBold;
+    src: url("../fonts/MullerBold.otf");
+}
+
+@font-face {
+    font-family: MullerExtraBold;
+    src: url("../fonts/MullerExtraBold.otf");
+}
+
+/*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: MullerRegular, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    background-color: rgb(255, 175, 24);
+    width: 224px;
+    height: 60px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    padding: 22px;
+    font-size: 16px;
+    font-family: MullerExtraBold, sans-serif;
+    color: rgb(56, 36, 0);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    padding: 16px 0 15px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .menu .menu-item a {
+    font-size: 16px;
+    color: rgb(164, 107, 0);
+    line-height: 1.2;
+}
+
+.header .menu ul {
+    width: 489px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*=============== MAIN ===============*/
+.main {
+    margin: 132px 0 81px 0;
+}
+
+.main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-info {
+    max-width: 647px;
+}
+
+.main .main-info h1 {
+    font-size: 45px;
+    font-family: MullerExtraBold, sans-serif;
+    line-height: 1.222;
+}
+
+.double-title {
+    color: rgb(185, 145, 80);
+}
+
+.double-title span {
+    color: #ffaf18;
+}
+
+.main .main-advantages {
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .advantage {
+    margin-top: 47px;
+    max-width: 306px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .advantage-text {
+    margin-left: 16px;
+}
+
+.main .advantage-title {
+    font-size: 16px;
+    font-family: MullerExtraBold, sans-serif;
+    color: rgb(255, 175, 24);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.main .advantage-description {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+}
+
+.main .main-action {
+    margin-top: 60px;
+}
+
+/*=============== PRODUCTS ===============*/
+.products {
+    padding: 80px 0 120px 0;
+}
+
+.products .products-title {
+    font-size: 35px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(189, 152, 92);
+    text-align: center;
+}
+
+.products .products-items {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products .product {
+    margin-top: 24px;
+    width: 282px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.product .product-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .product-title {
+    font-size: 18px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(56, 36, 0);
+}
+
+.product .product-text {
+    font-size: 14px;
+    color: rgb(24, 26, 26);
+    line-height: 1.286;
+    height: 49px;
+    margin: 14px 0 15px 0;
+}
+
+.product .product-action .btn {
+    width: 242px;
+    height: 50px;
+    padding: 17px;
+}
+
+/*=============== ORDER ===============*/
+.order {
+    padding: 120px 0 115px 0;
+    overflow: hidden;
+}
+
+.order .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.order .order-text {
+    max-width: 384px;
+}
+
+.order .order-text-title {
+    font-size: 35px;
+    font-family: MullerExtraBold, sans-serif;
+    margin-bottom: 65px;
+}
+
+.order .order-text-message {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+    line-height: 1.5;
+}
+
+.order .order-form {
+    margin-left: 122px;
+    max-width: 330px;
+}
+
+.order .order-input {
+    border-width: 1px;
+    border-color: rgb(185, 145, 80);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 330px;
+    font-size: 18px;
+    color: rgb(119, 94, 49);
+    padding: 23px 22px 24px 22px;
+    margin-bottom: 24px;
+    outline: none;
+    height: 60px;
+}
+
+.order .order-input::placeholder {
+    color: rgb(203, 168, 110);
+}
+
+.order .btn {
+    width: 330px;
+    height: 60px;
+}
+
+.order .order-image {
+    width: 282px;
+    position: relative;
+    margin-left: 78px;
+}
+
+.order .order-image img {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    padding: 16px 0 15px 0;
+}
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.footer .rights {
+    font-size: 12px;
+    color: rgb(186, 179, 179);
+    margin-left: 358px;
+}
+
+/*=============== BURGER MENU ===============*/
+.header .burger {
+    display: none;
+}
+
+.header .menu .close {
+    display: none;
+}
