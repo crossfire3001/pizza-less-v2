@@ -87,67 +87,61 @@ li {
 /*=============== MAIN ===============*/
 .main {
     margin: 132px 0 81px 0;
-}
-
-.main .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main-info {
-    max-width: 647px;
-}
-
-.main .main-info h1 {
-    font-size: 45px;
-    font-family: MullerExtraBold, sans-serif;
-    line-height: 1.222;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .main-info {
+            max-width: 647px;
+            h1 {
+                font-size: 45px;
+                font-family: MullerExtraBold, sans-serif;
+                line-height: 1.222;
+            }
+            .main-advantages {
+                margin-top: 13px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .advantage {
+                    margin-top: 47px;
+                    max-width: 306px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .advantage-text {
+                        margin-left: 16px;
+                        .advantage-title {
+                            font-size: 16px;
+                            font-family: MullerExtraBold, sans-serif;
+                            color: @second-color;
+                            text-transform: uppercase;
+                            margin-bottom: 10px;
+                        }
+                        .advantage-description {
+                            font-size: 16px;
+                            color: @main-color;
+                        }
+                    }
+                }
+            }
+            .main-action {
+                margin-top: 60px;
+            }
+        }
+    }
 }
 
 .double-title {
     color: @main-color;
+    span {
+        color: #ffaf18;
+    }
 }
 
-.double-title span {
-    color: #ffaf18;
-}
 
-.main .main-advantages {
-    margin-top: 13px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.main .advantage {
-    margin-top: 47px;
-    max-width: 306px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.main .advantage-text {
-    margin-left: 16px;
-}
-
-.main .advantage-title {
-    font-size: 16px;
-    font-family: MullerExtraBold, sans-serif;
-    color: @second-color;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.main .advantage-description {
-    font-size: 16px;
-    color: @main-color;
-}
-
-.main .main-action {
-    margin-top: 60px;
-}
 
 /*=============== PRODUCTS ===============*/
 .products {
