@@ -1,6 +1,7 @@
 /*=============== VARIABLES ===============*/
-@main-color: rgb(185, 145, 80);
-@second-color: rgb(255, 175, 24);
+@main-color: rgb(206, 15, 151);
+@second-color: rgb(231, 155, 8);
+@third-color: rgb(5, 36, 238);
 
 /*=============== FONTS ===============*/
 @font-face {
@@ -48,7 +49,7 @@ li {
     padding: 22px;
     font-size: 16px;
     font-family: MullerExtraBold, sans-serif;
-    color: rgb(56, 36, 0);
+    color: @third-color;
 }
 
 .container {
@@ -61,24 +62,26 @@ li {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
     padding: 16px 0 15px 0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-.header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header .menu .menu-item a {
-    font-size: 16px;
-    color: rgb(164, 107, 0);
-    line-height: 1.2;
-}
-
-.header .menu ul {
-    width: 489px;
-    display: flex;
-    justify-content: space-between;
+.menu {
+    ul {
+        width: 489px;
+        display: flex;
+        justify-content: space-between;
+        .menu-item {
+            a {
+                font-size: 16px;
+                color: rgb(164, 107, 0);
+                line-height: 1.2;
+            }
+        }
+    }
 }
 
 /*=============== MAIN ===============*/
@@ -184,7 +187,7 @@ li {
 .product .product-title {
     font-size: 18px;
     font-family: MullerBold, sans-serif;
-    color: rgb(56, 36, 0);
+    color: @third-color;
 }
 
 .product .product-text {
