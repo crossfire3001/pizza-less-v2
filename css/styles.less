@@ -1,5 +1,6 @@
 /*=============== VARIABLES ===============*/
 @main-color: rgb(185, 145, 80);
+@second-color: rgb(255, 175, 24);
 
 /*=============== FONTS ===============*/
 @font-face {
@@ -38,7 +39,7 @@ li {
 }
 
 .btn {
-    background-color: rgb(255, 175, 24);
+    background-color: @second-color;
     width: 224px;
     height: 60px;
     cursor: pointer;
@@ -131,7 +132,7 @@ li {
 .main .advantage-title {
     font-size: 16px;
     font-family: MullerExtraBold, sans-serif;
-    color: rgb(255, 175, 24);
+    color: @second-color;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
