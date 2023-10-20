@@ -50,6 +50,9 @@ li {
     font-size: 16px;
     font-family: MullerExtraBold, sans-serif;
     color: @third-color;
+    &:hover {
+        background-color: rgb(252, 184, 0);
+    }
 }
 
 .container {
@@ -160,6 +163,11 @@ li {
             box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
             text-align: center;
             padding: 15px 20px;
+            &:hover {
+                .product-image {
+                    transform: scale(1.1);
+                }
+            }
             .product-image {
                 height: 180px;
                 display: flex;
