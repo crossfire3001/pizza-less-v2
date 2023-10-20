@@ -191,33 +191,42 @@ li {
 .order {
     padding: 120px 0 115px 0;
     overflow: hidden;
-}
-
-.order .container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
-.order .order-text {
-    max-width: 384px;
-}
-
-.order .order-text-title {
-    font-size: 35px;
-    font-family: MullerExtraBold, sans-serif;
-    margin-bottom: 65px;
-}
-
-.order .order-text-message {
-    font-size: 16px;
-    color: @main-color;
-    line-height: 1.5;
-}
-
-.order .order-form {
-    margin-left: 122px;
-    max-width: 330px;
+    .container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        .order-text {
+            max-width: 384px;
+            .order-text-title {
+                font-size: 35px;
+                font-family: MullerExtraBold, sans-serif;
+                margin-bottom: 65px;
+            }
+            .order-text-message {
+                font-size: 16px;
+                color: @main-color;
+                line-height: 1.5;
+            }
+        }
+        .order-form {
+            margin-left: 122px;
+            max-width: 330px;
+        }
+        .order-image {
+            width: 282px;
+            position: relative;
+            margin-left: 78px;
+            img {
+                position: absolute;
+                bottom: -35px;
+                left: 0;
+            }
+        }
+    }
+    .btn {
+        width: 330px;
+        height: 60px;
+    }
 }
 
 .order .order-input {
@@ -232,27 +241,9 @@ li {
     margin-bottom: 24px;
     outline: none;
     height: 60px;
-}
-
-.order .order-input::placeholder {
-    color: rgb(203, 168, 110);
-}
-
-.order .btn {
-    width: 330px;
-    height: 60px;
-}
-
-.order .order-image {
-    width: 282px;
-    position: relative;
-    margin-left: 78px;
-}
-
-.order .order-image img {
-    position: absolute;
-    bottom: -35px;
-    left: 0;
+    &::placeholder {
+        color: rgb(203, 168, 110);
+    }
 }
 
 /*=============== FOOTER ===============*/
