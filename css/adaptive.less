@@ -202,32 +202,25 @@
    }
 
     /*=============== BURGER MENU ===============*/
-    .header .burger {
+    .header__menu.open {
         display: flex;
         align-items: center;
-    }
-
-    .header .burger svg {
-        width: 36px;
-        height: 36px;
-        fill: #f9d7a8;
-        margin-right: 20px;
-    }
-
-    .header .menu.open {
-        display: flex;
-        align-items: center;
-    }
-
-    .header .menu .close {
+        z-index: 10;
+      }
+    
+      .menu__close {
         display: block;
         width: 24px;
         height: 24px;
-        fill: rgb(164, 107, 0);
+        fill: rgb(235, 168, 177);
         position: absolute;
         top: 20px;
         left: 20px;
-    }
+      }
+    
+      .header__burger {
+        display: flex;
+      }
 
 }
 
