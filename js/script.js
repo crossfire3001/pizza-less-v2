@@ -42,6 +42,3 @@ document.getElementById('create-order').onclick = function () {
         alert("Спасибо за заказ!");
     }
 }
-
-element.onclick = function () { alert(1); }
-element.click(function() { alert(1); })
