@@ -52,7 +52,12 @@ $(document).ready(function() {
         cartArray.push(productTitle);
         localStorage.setItem('cart', JSON.stringify(cartArray));
 
-        console.log(localStorage);
+        cartArray.map((value, index) => {
+            let cartAdd = `${index + 1}`;
+            $('#cart-container').html(cartAdd);
+        });
+
+
 
     });
 });
