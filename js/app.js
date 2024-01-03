@@ -34,5 +34,26 @@ $(document).ready(function() {
             document.cookie = `${cookieName}=;expires:Thu, 01 Jan 1970 00:00:001 GMT`;
         }
     }
+
+    let cartArray = [];
+
+    $('.product-button').click(function (e) {
+        let productTitle = $(this)
+            .closest('.product-action')
+            .siblings('.product-title')
+            .text()
+            .trim();
+
+        let cart = localStorage.getItem('cart');
+        if (cart) {
+            cartArray = JSON.parse(cart);
+        }
+
+        cartArray.push(productTitle);
+        localStorage.setItem('cart', JSON.stringify(cartArray));
+
+        console.log(localStorage);
+
+    });
 });
 
