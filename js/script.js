@@ -22,7 +22,7 @@ document.getElementById('create-order').onclick = function () {
     let phoneInput = document.getElementById('phone-input');
     let orderFilled = false;
 
-    if (!productInput.value) {
+    if (!productInput.value.match(/^[А-Я][а-я]+\s*$/)) {
         alert('Заполните пиццу');
         return;
     }
