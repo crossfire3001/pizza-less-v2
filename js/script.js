@@ -20,7 +20,8 @@ for (let i = 0; i < addToCartButtons.length; i++) {
 let products = $('.product');
 for (let i = 0; i < products.length; i++) {
     let productTitle = products.eq(i).find('.product-title');
-    productTitle.text(productTitle.text().replace(/Кури[а-я]+/gi, 'Индейка'))
+    /* productTitle.text(productTitle.text().replace(/Кури[а-я]+/gi, 'Индейка')) */
+    productTitle.text(productTitle.text().replace(/(Кури[а-я]+)(.+)/gi, '$2 из индейки'));
 }
 
 document.getElementById('create-order').onclick = function () {
