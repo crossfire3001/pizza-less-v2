@@ -333,12 +333,13 @@
             <!-- /.order-text-message -->
         </div>
         <!-- /.order-text -->
-        <div class="order-form">
+        <form class="order-form">
             <input type="text" class="order-input" id="product-input" placeholder="Пицца">
             <input type="text" class="order-input" id="address-input" placeholder="Адрес доставки">
-            <input type="text" class="order-input" id="phone-input" placeholder="Телефон">
+            <input type="text" class="order-input" id="phone-input" placeholder="Телефон +7 (999) 999-99-99"
+                   pattern="^\+7\s\(9\d{2}\)\s\d{3}-\d{2}-\d{2}" required>
             <button class="btn" id="create-order">Оформить заказ</button>
-        </div>
+        </form>
         <!-- /.order-form -->
         <div class="order-image">
             <img src="images/pizza-slice.png" alt="pizza slice">
