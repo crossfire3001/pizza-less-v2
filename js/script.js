@@ -17,6 +17,12 @@ for (let i = 0; i < addToCartButtons.length; i++) {
     }
 }
 
+let products = $('.product');
+for (let i = 0; i < products.length; i++) {
+    let productTitle = products.eq(i).find('.product-title');
+    productTitle.text(productTitle.text().replace(/Кури[а-я]+/gi, 'Индейка'))
+}
+
 document.getElementById('create-order').onclick = function () {
     let addressInput = document.getElementById('address-input');
     let phoneInput = document.getElementById('phone-input');
